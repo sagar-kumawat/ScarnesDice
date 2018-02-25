@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B4F8F9"
+    android:id="@+id/activity_main2"
+
+    tools:context="com.anonymous.scarnedice.scarnesdice.Main2Activity">
+
+    <Button
+        android:id="@+id/player"
+        style="@android:style/Widget.Material.Button.Inset"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="63dp"
+        android:text="PLAYER VS PLAYER"
+        android:onClick="click"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <Button
+        android:id="@+id/comp"
+        style="@android:style/Widget.Material.Button.Inset"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_alignLeft="@+id/player"
+        android:layout_alignStart="@+id/player"
+        android:layout_below="@+id/player"
+        android:layout_marginTop="66dp"
+        android:onClick="clickHere"
+        android:text="PLAYER VS COMPUTER"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+</RelativeLayout>
